@@ -68,3 +68,68 @@ header {
     height: 50px;
     flex-shrink: 0;
 }
+
+.my-works {
+    margin-top: 5%;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
+}
+
+.my-works h1 {
+    font-size: 45px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    box-shadow: 10px 7px 10px #0534;
+
+}
+
+.project img {
+    width: 100%;
+}
+
+.project-description {
+    padding: 10px 20px 35px 20px;
+}
+
+.project-description-first-row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-description-first-row h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.project-description-second-row {
+    padding-bottom: 45px;
+}
+
+.project-description-second-row p {
+    font-size: 20px;
+}
+
+.project-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.project-icons svg {
+    height: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
