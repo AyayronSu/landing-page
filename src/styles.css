@@ -197,3 +197,115 @@ footer {
     max-height: 650px;
     width: auto;
 }
+
+@media (max-width: 1366px) {
+    /* 1. HEADER: Stack the image and text vertically */
+    .header-elements {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .header-elements img {
+        max-height: 400px; /* Resize for tablet */
+        margin-right: 0;   /* Remove any desktop overlap */
+        margin-bottom: -50px; /* Pull the white box up slightly to overlap the image */
+    }
+
+    .about-me-text {
+        width: 100%;
+        padding: 60px 30px 30px 30px; /* Extra top padding for the image overlap */
+    }
+
+    /* 2. PROJECT GRID: Switch from 3x2 to 2x3 */
+    .work-container {
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        padding: 0 40px;
+        gap: 40px;
+    }
+
+    .my-works h1 {
+        padding-left: 40px;
+    }
+
+    /* 3. FOOTER: Stack the contact info and the image */
+    footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 40px;
+        align-items: center;
+        text-align: left;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-image img {
+        width: 100%; /* Make image fill the width of the container */
+        max-height: none;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 750px) {
+    /* 1. HEADER: Full vertical stack */
+    .header-elements {
+        padding: 0; /* Remove side padding so images reach edges */
+    }
+
+    .header-elements img {
+        width: 100%;
+        max-height: none;
+        box-shadow: none; /* Often cleaner on mobile */
+    }
+
+    .about-me-text {
+        margin: 0;
+        padding: 40px 20px;
+        box-shadow: none; /* Matches the flat mobile look */
+    }
+
+    .about-me-text h1 {
+        font-size: 32px; /* Smaller text for small screens */
+    }
+
+    .about-me-text p {
+        font-size: 18px;
+    }
+
+    .header-icons {
+        align-self: flex-start; /* Icons usually look better left-aligned on mobile */
+        margin-top: 30px;
+    }
+
+    /* 2. PROJECT GRID: 1 Column */
+    .work-container {
+        grid-template-columns: 1fr; /* Full width cards */
+        padding: 0 20px;
+    }
+
+    .my-works h1 {
+        padding-left: 20px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    /* 3. FOOTER: Center align content */
+    footer {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .contact-info {
+        align-items: center; /* Centers the address, email, and icons */
+    }
+
+    .contact-icons {
+        justify-content: center;
+    }
+
+    .contact-image img {
+        margin-top: 20px;
+    }
+}
