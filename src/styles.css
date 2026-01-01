@@ -38,10 +38,12 @@ header {
     background-color: white;
     margin-top: 45px;
     margin-bottom: 45px;
-    padding: 25px;
+    padding: 45px 25px 45px 25px;
     box-shadow: 10px 7px 10px rgba(0, 60, 36, 0.267);
     position: relative;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-me-text h1 {
@@ -54,8 +56,15 @@ header {
     font-size: 30px;
 }
 
+.header-icons {
+    display: flex;
+    gap: 15px;
+    align-self: flex-end;
+    margin-top: auto;
+}
 
 .header-icons svg {
-    max-height: 50px;
-    max-width: auto;
+    height: 50px;
+    height: 50px;
+    flex-shrink: 0;
 }
