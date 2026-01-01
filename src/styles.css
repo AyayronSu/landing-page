@@ -53,3 +53,9 @@ header {
 .about-me-text p {
     font-size: 30px;
 }
+
+
+.header-icons svg {
+    max-height: 50px;
+    max-width: auto;
+}
