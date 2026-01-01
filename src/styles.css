@@ -30,6 +30,8 @@ header {
     max-height: 750px;
     width: auto;
     box-shadow: 10px 7px 10px #0534;
+    position: relative;
+    z-index: 10;
 }
 
 .about-me-text {
@@ -37,7 +39,9 @@ header {
     margin-top: 45px;
     margin-bottom: 45px;
     padding: 25px;
-    box-shadow: 10px 7px 10px #0534;
+    box-shadow: 10px 7px 10px rgba(0, 60, 36, 0.267);
+    position: relative;
+    z-index: 5;
 }
 
 .about-me-text h1 {
