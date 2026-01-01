@@ -71,8 +71,6 @@ header {
 
 .my-works {
     margin-top: 5%;
-    padding-left: 75px;
-    padding-right: 75px;
     padding-bottom: 75px;
 }
 
@@ -80,6 +78,7 @@ header {
     font-size: 45px;
     font-weight: 400;
     padding-bottom: 15px;
+    padding-left: 75px;
 }
 
 .work-container {
